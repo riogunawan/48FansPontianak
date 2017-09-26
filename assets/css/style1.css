@@ -1,0 +1,127 @@
+.card_idol {
+    margin-bottom: 20px;
+}
+
+.tulis-hover:hover {
+    color: #ee163b;
+}
+
+.idol_deskripsi h5 {
+    margin-right: 20px;
+}
+
+.map {
+    margin: 40px auto 0;
+    display: block;
+    max-width: 100%;
+    height: 400px;
+    background-color: rgba(0,0,0,.4);
+}
+
+#map {
+    height: 100%;
+}
+
+.volunteer.border {
+    height: 320px;
+}
+
+.tab-user:hover {
+    background: #fff;
+    border: 2px solid #ee163b;
+    border-radius: 10%;
+    color: #fff !important;
+}
+
+.register .login-content {
+    width: 80% !important;
+}
+
+.register .panel-primary {
+    background: transparent;
+}
+
+.register .login-content .panel-body .select2-choice {
+    color: #333;
+}
+
+.login-form-fall div.datepicker table tr td.day {
+    background: #ddd;
+    color: #333;
+}
+
+.login-form-fall div.datepicker table tr td.day:hover {
+    background: #ccc;
+    color: #303641;
+}
+
+.login-form-fall div.datepicker table tr td.old, .login-form-fall div.datepicker table tr td.new {
+    background: #fff;
+    color: #ddd;
+}
+
+.login-form-fall div.datepicker table tr td.active {
+    background: red;
+    color: #fff;
+}
+
+.register .dropzone .dz-preview .dz-remove {
+    color: #e50014 !important;
+}
+
+.login-form .bg-login {
+    position: fixed;
+    opacity: .7;
+    margin-top: -60px;
+    width: 100%;
+}
+
+.login-saya .login-content {
+    background: rgba(0, 0, 0, .7);
+    margin-top: -50px;
+    padding: 20px 20px 0 20px;
+    width: 380px;
+}
+
+.dropprofil {
+    margin-right: 10px;
+}
+
+.menu-k {
+    color: #ee163b;
+    font-size: 20px;
+    margin-right: 25px;
+    padding: 5px 10px;
+}
+
+.menu-k span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    background: #ee163b;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.menu-k:hover {
+    color: #fff;
+    background: #ee163b;
+}
+
+@media (max-width: 767px) {
+    .mobile-card {
+        min-height: 15em !important;
+    }
+
+    .dropprofil {
+        margin-right: 20px;
+    }
+
+    .pull-right .btn {
+        margin-top: 0px !important;
+    }
+
+    .mobile-margin-bottom {
+        margin-bottom: 10px;
+    }
+}

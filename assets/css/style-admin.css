@@ -1,0 +1,40 @@
+.bg {
+    position: fixed;
+    opacity: .6;
+    width: 650px;
+    margin: 90px 0 0 150px;
+}
+
+.panel-saya {
+    background: rgba(255, 255, 255, .8);
+    border: 1px solid #981b1b;
+    padding-bottom: 20px;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+    /*background: #E91E63;*/
+    background: #fe0002;
+    color: #fff;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #ffcbcb;
+}
+
+/*.panel-saya .form-group .form-control {
+    margin-bottom: 20px;
+}*/
+
+.profile-env section.profile-info-tabs {
+    margin-top: -150px;
+    padding-top: 200px;
+}
+
+.kertas-tiket {
+    background: #22c7dc;
+    font-weight: 700;
+    padding-top: 20px;
+    border: 1px dashed;
+    margin-bottom: 20px;
+    color: #000;
+}

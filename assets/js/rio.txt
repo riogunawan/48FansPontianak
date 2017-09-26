@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/dropzone/dropzone.min.css">
+    </head>
+    <body>
+        <!-- <div id="content"> -->
+            <div id="my-dropzone" class="dropzone" style="width: 200px;"></div>
+        <!-- </div> -->
+        <script src="<?php echo base_url(); ?>assets/dropzone/dropzone.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+        <script>
+            Dropzone.autoDiscover = false;
+            var myDropzone = new Dropzone("#my-dropzone",{
+                url: "<?php echo site_url("C_biodata/upload"); ?>",
+                acceptedFiles: "image/*",
+                addRemoveLinks: true,
+                removefile: function(file){
+                    var name = file.name;
+                    $.ajax({
+                        type: "post",
+                        url: "<?php echo site_url("C_biodata/remove"); ?>",
+                        data: {file: name},
+                        dataType: 'html'
+                    });
+                    var previewElement;
+                    return (previewElement = file.previewElement) != null ? (previewElement.parentNode.removeChild(file.previewElement)) : (void 0);
+                },
+    success: function( file, response ){
+           var filename=myDropzone.files[0].name;
+           $('#userfile').val(filename);
+        },
+            });
+        </script>
+    </body>
+</html>
