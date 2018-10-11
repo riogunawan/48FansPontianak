@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>assets/neon/js/select2/select2-bootstrap.css">
     <link rel="stylesheet" href="<?= base_url() ?>assets/css/dropzone-min.css">
 
-    <link rel="stylesheet" href="<?= base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/style2.css">
 
     <?= @$MASTER['CSS'] ?>
     <script src="<?= base_url() ?>assets/jquery.js"></script>

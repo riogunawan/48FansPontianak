@@ -9,7 +9,7 @@
           <ol class="breadcrumb text-center mt-10 white">
             <li><a href="<?= site_url('') ?>">Home</a></li>
             <li><a href="<?= site_url('idol_group') ?>"><?= @$MASTER['DATA']['SUBTITLE'] ?></a></li>
-            <li><a href="<?= site_url('idol_group/group/') ?><?= $detail->id_idol_group ?>"><?= $detail->nama_idol_group ?></a></li>
+            <li><a href="<?= site_url('idol_group/group/'.$detail->id_idol_group) ?>"><?= $detail->nama_idol_group ?></a></li>
             <li class="active"><?= $detail->nama_idol ?></li>
           </ol>
         </div>
@@ -30,7 +30,7 @@
             <center><img src="<?= base_url() ?>assets/uploads/<?= $detail->foto_idol ?>" alt="idol" class="img-circle" height="200" width="200"></center>
           </div>
           <div class="col-md-6">
-            <a href="<?= site_url('idol_group/group/') ?><?= $detail->id_idol_group ?>"><img src="<?= base_url() ?>assets/uploads/<?= $detail->logo_idol_group ?>" alt="Tidak Ada logo idol group" class="" height="200"></a>
+            <a href="<?= site_url('idol_group/group/'.$detail->id_idol_group) ?>"><img src="<?= base_url() ?>assets/uploads/<?= $detail->logo_idol_group ?>" alt="Tidak Ada logo idol group" class="" height="200"></a>
           </div>
         </div>
         <!-- ISI DESKRIPSI -->
@@ -79,7 +79,7 @@
                                         </div>
                                         <div class='col-xs-6 p-0 pl-15'>
                                             <div class='event-content'>
-                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/')."$row->id_event' class='tulis-hover'>$row->judul_event</a></h5>
+                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/'.$row->id_event)."' class='tulis-hover'>$row->judul_event</a></h5>
                                                 <ul>
                                                     <li><i class='fa fa-clock-o'></i> &nbsp; pukul $row->waktu_event</li>
                                                     <li><i class='fa fa-map-marker'></i> &nbsp; di $row->lokasi_event.</li>
@@ -119,7 +119,7 @@
                                         </div>
                                         <div class='col-xs-6 p-0 pl-15'>
                                             <div class='event-content'>
-                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/')."$row->id_event' class='tulis-hover'>$row->judul_event</a></h5>
+                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/'.$row->id_event)."' class='tulis-hover'>$row->judul_event</a></h5>
                                                 <ul>
                                                     <li><i class='fa fa-clock-o'></i> &nbsp; pukul $row->waktu_event</li>
                                                     <li><i class='fa fa-map-marker'></i> &nbsp; di $row->lokasi_event.</li>

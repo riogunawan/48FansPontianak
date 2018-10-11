@@ -414,11 +414,11 @@
                                     </div>
                                 </div>
                                 <div class='entry-content border-1px p-20'>
-                                    <h5 class='entry-title mt-0 pt-0'><a href='".site_url('berita/lihat/')."$row->id_berita'>$row->judul_berita</a></h5>
+                                    <h5 class='entry-title mt-0 pt-0'><a href='".site_url('berita/lihat/'.$row->id_berita)."'>$row->judul_berita</a></h5>
                                     <p class='text-left mb-20 mt-15 font-13'>".$cetak = substr($row->isi_berita, 0, 100)."...</p>
-                                    <a class='btn btn-flat btn-dark btn-theme-colored btn-sm pull-left' href='".site_url('berita/lihat/')."$row->id_berita'>More</a>
+                                    <a class='btn btn-flat btn-dark btn-theme-colored btn-sm pull-left' href='".site_url('berita/lihat/'.$row->id_berita)."'>More</a>
                                     <ul class='list-inline entry-date pull-right font-12 mt-5'>
-                                        <li><a class='text-theme-colored' href='".site_url('anggota48ptk/lihat/')."$row->id_akun'>$row->nama_akun |</a></li>
+                                        <li><a class='text-theme-colored' href='".site_url('anggota48ptk/lihat/'.$row->id_akun)."'>$row->nama_akun |</a></li>
                                         <li><span class='text-theme-colored'>".tgl_indo($row->tgl_berita)."</span></li>
                                     </ul>
                                     <div class='clearfix'></div>
@@ -455,7 +455,7 @@
                                         </div>
                                         <div class='col-xs-6 p-0 pl-15'>
                                             <div class='event-content'>
-                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/')."$row->id_event' class='tulis-hover'>$row->judul_event</a></h5>
+                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/'.$row->id_event)."' class='tulis-hover'>$row->judul_event</a></h5>
                                                 <ul>
                                                     <li><i class='fa fa-clock-o'></i> &nbsp; pukul $row->waktu_event</li>
                                                     <li><i class='fa fa-map-marker'></i> &nbsp; di $row->lokasi_event.</li>
@@ -500,7 +500,7 @@
                                         </div>
                                         <div class='col-xs-6 p-0 pl-15'>
                                             <div class='event-content'>
-                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/')."$row->id_event' class='tulis-hover'>$row->judul_event</a></h5>
+                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/'.$row->id_event)."' class='tulis-hover'>$row->judul_event</a></h5>
                                                 <ul>
                                                     <li><i class='fa fa-clock-o'></i> &nbsp; pukul $row->waktu_event</li>
                                                     <li><i class='fa fa-map-marker'></i> &nbsp; di $row->lokasi_event.</li>
@@ -550,7 +550,7 @@
                       <div class='volunteer border bg-white-fa maxwidth400 mb-30 p-30' style='height:auto;'>
                         <div class='thumb'><img alt='Tidak Ada Foto' height='270' src='{$base}assets/uploads/$row->foto_akun' class='img-circle'></div>
                         <div class='info'>
-                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/')."$row->id_akun'>$row->nama_akun</a></h4>
+                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/'.$row->id_akun)."'>$row->nama_akun</a></h4>
                           <p>$row->deskripsi_akun</p>
                           <hr>
                           <ul class='styled-icons icon-sm icon-dark icon-theme-colored mt-10 mb-0'>
@@ -640,7 +640,7 @@
                       <div class='volunteer border bg-white-fa maxwidth400 mb-30 p-30' style='height:auto;'>
                         <div class='thumb'><img alt='Tidak Ada Foto' height='270' src='{$base}assets/uploads/$row->foto_akun' class='img-rounded'></div>
                         <div class='info'>
-                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/')."$row->id_akun'>$row->nama_akun</a></h4>
+                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/'.$row->id_akun)."'>$row->nama_akun</a></h4>
                           <h6 class='occupation'>$row->keanggotaan</h6>
                           <p>$row->deskripsi_akun</p>
                           <hr>
@@ -664,7 +664,7 @@
                       <div class='volunteer border bg-white-fa maxwidth400 mb-30 p-30' style='height:auto;'>
                         <div class='thumb'><img alt='Tidak Ada Foto' height='270' src='{$base}assets/uploads/$row->foto_akun' class='img-rounded'></div>
                         <div class='info'>
-                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/')."$row->id_akun'>$row->nama_akun</a></h4>
+                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/'.$row->id_akun)."'>$row->nama_akun</a></h4>
                           <h6 class='occupation'>$row->keanggotaan</h6>
                           <p>$row->deskripsi_akun</p>
                           <hr>

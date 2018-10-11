@@ -41,7 +41,7 @@
                         <ul class="dropdown">
                             <?php
                                 foreach (@$MASTER['DATA']['MenuIdolG'] as $row) {
-                                    echo "<li><a href='".site_url('idol_group/group/')."$row->id_idol_group'>$row->nama_idol_group</a></li>";
+                                    echo "<li><a href='".site_url('idol_group/group/'.$row->id_idol_group)."'>$row->nama_idol_group</a></li>";
                                 }
                             ?>
                         </ul>
@@ -58,7 +58,7 @@
                         if ($this->session->userdata('masuk') == 'Sudah Login') {
                             echo '
                                 <li class="dropdown mt-15 dropprofil">
-                                    <a href="'.site_url('event_gathering/lihatkeranjang/').''.$this->session->userdata('id_akun').'" class="menu-k"><i class="fa fa-shopping-cart"></i> <span>&nbsp;'.@$MASTER['DATA']['keranjang'].'</span></a>
+                                    <a href="'.site_url('event_gathering/lihatkeranjang/'.$this->session->userdata('id_akun')).'" class="menu-k"><i class="fa fa-shopping-cart"></i> <span>&nbsp;'.@$MASTER['DATA']['keranjang'].'</span></a>
                                     <a href="'.site_url('adm_home').'" class="dropdown-toggle" data-toggle="dropdown">
                                         <img src="'.base_url('assets/uploads/').''.$this->session->userdata('foto_akun').'" class="img-rounded" width="45"> <b>'.$this->session->userdata('nama_akun').' &nbsp;</b><b class="caret"></b>
                                     </a>

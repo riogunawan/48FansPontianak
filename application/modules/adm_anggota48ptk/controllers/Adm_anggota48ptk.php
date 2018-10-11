@@ -224,7 +224,7 @@ class Adm_anggota48ptk extends Q_Controller {
                     $condition["id_akun"] = $this->input->post("id_akun");
                     $m->edit($data, $condition);
                     $this->session->set_flashdata('info', 'Foto Berhasil Di Ubah');
-                    redirect("adm_anggota48ptk/edit/{$id_akun}");
+                    redirect("adm_anggota48ptk/Edit/{$id_akun}");
                 } else if (! $this->upload->do_upload()) {
                     echo "gagal";
                 }

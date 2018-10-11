@@ -63,7 +63,7 @@
                       <div class='volunteer border bg-white-fa mb-30 p-30'>
                         <div class='thumb'><img alt='Tidak Ada Foto' src='{$base}assets/uploads/$row->foto_akun' class='img-fullwidth' height='150px'></div>
                         <div class='info'>
-                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/')."$row->id_akun'>$row->nama_akun</a></h4>
+                          <h4 class='name'><a href='".site_url('anggota48ptk/lihat/'.$row->id_akun)."'>$row->nama_akun</a></h4>
                           <h6 class='occupation'>$row->keanggotaan</h6>
                         </div>
                       </div>
@@ -95,7 +95,7 @@
                                         </div>
                                         <div class='col-xs-6 p-0 pl-15'>
                                             <div class='event-content'>
-                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/')."$row->id_event' class='tulis-hover'>$row->judul_event</a></h5>
+                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/'.$row->id_event)."' class='tulis-hover'>$row->judul_event</a></h5>
                                                 <ul>
                                                     <li><i class='fa fa-clock-o'></i> &nbsp; pukul $row->waktu_event</li>
                                                     <li><i class='fa fa-map-marker'></i> &nbsp; di $row->lokasi_event.</li>
@@ -135,7 +135,7 @@
                                         </div>
                                         <div class='col-xs-6 p-0 pl-15'>
                                             <div class='event-content'>
-                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/')."$row->id_event' class='tulis-hover'>$row->judul_event</a></h5>
+                                                <h5 class='media-heading text-uppercase'><a href='".site_url('event_gathering/lihat/'.$row->id_event)."' class='tulis-hover'>$row->judul_event</a></h5>
                                                 <ul>
                                                     <li><i class='fa fa-clock-o'></i> &nbsp; pukul $row->waktu_event</li>
                                                     <li><i class='fa fa-map-marker'></i> &nbsp; di $row->lokasi_event.</li>

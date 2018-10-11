@@ -153,10 +153,10 @@ class Register extends Q_Controller {
                 $mail->Port = 587;
                 $mail->SMTPSecure = 'tls';
                 $mail->SMTPAuth = true;
-                $mail->Username = '48fansptk@gmail.com';                 // SMTP username
-                $mail->Password = 'pontianak484848';                           // SMTP password
+                $mail->Username = 'carlstrench@gmail.com';                 // SMTP username
+                $mail->Password = 'rman53844492';                           // SMTP password
 
-                $mail->setFrom('48fansptk@gmail.com', '48FansPontianak');
+                $mail->setFrom('carlstrench@gmail.com', '48FansPontianak');
                 $mail->addAddress($sendTo);     // Add a recipient
                 $mail->isHTML(true);                                  // Set email format to HTML
                 $mail->WordWrap = 0;

@@ -1,47 +1,20 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+application/session
+captcha
 
-# Folder config file
-Desktop.ini
+assets/upload/abma/*
+!assets/upload/abma/index.html
+assets/upload/admin/*
+!assets/upload/admin/index.html
+assets/upload/foto_abma/*
+!assets/upload/foto_abma/index.html
+assets/upload/kawasan_tanah/persyaratan_administratif/*
+!assets/upload/kawasan_tanah/persyaratan_administratif/index.html
+assets/upload/kawasan_tanah/persyaratan_fisik/*
+!assets/upload/kawasan_tanah/persyaratan_fisik/index.html
+assets/upload/pengadaan_tanah/permohonan
+assets/upload/regulasi/*
+!assets/upload/regulasi/index.html
+assets/upload/abma_file_pendukung
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+assets/upload/dokumen/*
+!assets/upload/dokumen/index.html

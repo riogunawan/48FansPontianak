@@ -38,7 +38,7 @@
                 <div class="volunteer border bg-white-fa mb-30 p-30 text-center">
                   <div class="thumb"><img alt="Tidak Ada Foto Idol" src="<?= base_url() ?>assets/uploads/<?= $detail->foto_idol ?>" class="" height="150px"></div>
                   <div class="info">
-                    <h4 class="name"><a href="<?= site_url('idol_group/idol/') ?><?= $detail->id_idol ?>"><?= $detail->nama_idol ?></a></h4>
+                    <h4 class="name"><a href="<?= site_url('idol_group/idol/'.$detail->id_idol) ?>"><?= $detail->nama_idol ?></a></h4>
                     <h6 class="occupation"><?= $detail->nama_idol_group ?></h6>
                   </div>
                 </div>
